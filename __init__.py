@@ -29,7 +29,6 @@ def method_not_found(e):
     return render_template("405.html")
 
 
-
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
